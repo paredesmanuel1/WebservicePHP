@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://community.vtiger.com/help/vtigercrm/administrators/installation.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script type="text/javascript" async="" src="./Installation — Vtiger CRM_files/ga.js.descarga"></script><script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-105386-27']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <title>Installation — Vtiger CRM</title>
+    
+    <link rel="stylesheet" href="./Installation — Vtiger CRM_files/solar.css" type="text/css">
+    <link rel="stylesheet" href="./Installation — Vtiger CRM_files/pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '6.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="./Installation — Vtiger CRM_files/jquery.js.descarga"></script>
+    <script type="text/javascript" src="./Installation — Vtiger CRM_files/underscore.js.descarga"></script>
+    <script type="text/javascript" src="./Installation — Vtiger CRM_files/doctools.js.descarga"></script>
+    <link rel="top" title="Vtiger CRM" href="http://community.vtiger.com/help/index.html">
+    <link rel="up" title="Administrator Guide" href="http://community.vtiger.com/help/vtigercrm/administrators/index.html">
+    <link rel="next" title="Migration" href="http://community.vtiger.com/help/vtigercrm/administrators/migration.html">
+    <link rel="prev" title="Administrator Guide" href="http://community.vtiger.com/help/vtigercrm/administrators/index.html"><link href="./Installation — Vtiger CRM_files/css" rel="stylesheet" type="text/css">
+<link href="./Installation — Vtiger CRM_files/solarized-dark.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="http://community.vtiger.com/help/genindex.html" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="http://community.vtiger.com/help/vtigercrm/administrators/migration.html" title="Migration" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="http://community.vtiger.com/help/vtigercrm/administrators/index.html" title="Administrator Guide" accesskey="P">previous</a> |</li>
+        <li><a href="http://community.vtiger.com/help/index.html">Vtiger CRM</a> »</li>
+          <li><a href="http://community.vtiger.com/help/vtigercrm/administrators/index.html" accesskey="U">Administrator Guide</a> »</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="http://community.vtiger.com/help/index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="http://community.vtiger.com/help/vtigercrm/administrators/installation.html#">Installation</a><ul>
+<li><a class="reference internal" href="http://community.vtiger.com/help/vtigercrm/administrators/installation.html#pre-requisites">Pre-requisites</a></li>
+<li><a class="reference internal" href="http://community.vtiger.com/help/vtigercrm/administrators/installation.html#procedure">Procedure</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="http://community.vtiger.com/help/vtigercrm/administrators/index.html" title="previous chapter">Administrator Guide</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="http://community.vtiger.com/help/vtigercrm/administrators/migration.html" title="next chapter">Migration</a></p>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="http://community.vtiger.com/help/search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="http://community.vtiger.com/help/vtigercrm/administrators/installation.html#installation" title="Permalink to this headline">¶</a></h1>
+<p>Vtiger CRM is web-application built using PHP.</p>
+<div class="section" id="pre-requisites">
+<h2>Pre-requisites<a class="headerlink" href="http://community.vtiger.com/help/vtigercrm/administrators/installation.html#pre-requisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Apache 2.1+</li>
+<li>MySQL 5.1+ (default storage engine = InnoDB)</li>
+<li>PHP 5.2+, 5.3<ul>
+<li>php-imap</li>
+<li>php-curl</li>
+<li>php-xml</li>
+<li>max_memory (min. 256MB)</li>
+<li>max_execution_time (min. 60 seconds)</li>
+<li>error_reporting (E_ALL &amp; ~E_NOTICE &amp; ~E_DEPRECATED)</li>
+</ul>
+</li>
+<li>Hardware: 4 GB RAM, 250 GB Disk (for file attachments)</li>
+</ul>
+</div>
+<div class="section" id="procedure">
+<h2>Procedure<a class="headerlink" href="http://community.vtiger.com/help/vtigercrm/administrators/installation.html#procedure" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Get your LAMP, WAMP, MAMP configured that meets the above pre-requisites.</li>
+<li>Unzip Vtiger CRM into web-folder (or document root)</li>
+<li>Make sure to provide writeable access to (Apache process owner) on web-folder.</li>
+<li>Visit <a class="reference external" href="http://yourserver.tld/index.php">http://yourserver.tld/index.php</a></li>
+<li>The wizard will help you get through next steps of installation.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="http://community.vtiger.com/help/genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a href="http://community.vtiger.com/help/vtigercrm/administrators/migration.html" title="Migration">next</a> |</li>
+        <li class="right">
+          <a href="http://community.vtiger.com/help/vtigercrm/administrators/index.html" title="Administrator Guide">previous</a> |</li>
+        <li><a href="http://community.vtiger.com/help/index.html">Vtiger CRM</a> »</li>
+          <li><a href="http://community.vtiger.com/help/vtigercrm/administrators/index.html">Administrator Guide</a> »</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        © Copyright 2013, www.vtiger.com.
+    </div>
+  
+</body></html>
